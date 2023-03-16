@@ -1,0 +1,15 @@
+<form class="w-50">
+  <div class="form-outline mb-4">
+    <input type="text" id="URL" class="form-control" placeholder="URL" [(ngModel)]="url" [ngModelOptions]="{standalone: true}"/>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="email" id="Name" class="form-control" placeholder="Shorten name" [(ngModel)]="shortenName" [ngModelOptions]="{standalone: true}"/>
+  </div>
+
+  <div class="form-outline mb-4">
+    <textarea class="form-control" id="Description" rows="4" placeholder="Shorten description" [(ngModel)]="shortenDescription" [ngModelOptions]="{standalone: true}"></textarea>
+  </div>
+
+  <button type="button" class="btn btn-primary btn-block mb-4 w-25" (click)="Create()">Create</button>
+</form>

@@ -1,0 +1,14 @@
+<h2>About</h2>
+<div *ngIf="isAdmin">
+  <form>
+
+    <textarea class="form-control w-50" id="form4Example3" rows="4" [(ngModel)]="info" [ngModelOptions]="{standalone: true}"></textarea>
+
+    <button type="button" class="btn btn-primary btn-block mb-4 mt-3 w-25" (click)="Save()">
+      Save
+    </button>
+  </form>
+</div>
+<div *ngIf="!isAdmin">
+  {{this.info}}
+</div>

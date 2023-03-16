@@ -1,0 +1,9 @@
+Here you can read information about application and algorithms it uses.
+It`s ASP.Net core application with frontend built using Angular. 
+To keep data application uses DBMS SQLite. Account system 
+built using Identity framework. For authorization it uses Jwt tokens.
+Talking about algorithms, application create short links this way:
+1) check whether input string is URL (if not process stops)
+2) it randomly takes one number from 1 to ten million
+3) convert into array of bytes<
+4) convert into 6 element string with Base64UrlEncoder

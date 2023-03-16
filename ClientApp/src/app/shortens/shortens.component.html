@@ -1,0 +1,14 @@
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="shortens">
+  <thead>
+  <tr>
+    <th>Shortenee</th>
+    <th>Long Url</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let shorten of shortens">
+    <td [routerLink]="['/shortens/']+shorten.shortUrl">https://localhost:44427/{{ shorten.shortUrl }}</td>
+    <td [routerLink]="['/shortens/']+shorten.shortUrl">{{ shorten.fullUrl }}</td>
+  </tr>
+  </tbody>
+</table>

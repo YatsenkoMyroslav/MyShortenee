@@ -1,0 +1,13 @@
+<h2 class="mt-3">{{this.shorten.shortenName}}</h2>
+
+<p class="mt-2">{{this.shorten.shortenDescription}}</p>
+
+<h3 class="mt-4">Shortee</h3>
+<div><a [href]="shorten.fullUrl">https:localhost:44427/{{this.shorten.shortUrl}}</a></div>
+
+<h3 class="mt-3">Full</h3>
+<div><a [href]="shorten.fullUrl">{{this.shorten.fullUrl}}</a></div>
+
+<h4 class="mt-3">Created by {{this.shorten.createdBy.userName}}</h4>
+
+<button class="btn btn-danger" (click)="Delete()" *ngIf="canDelete">Delete</button>
